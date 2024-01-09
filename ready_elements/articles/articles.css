@@ -1,0 +1,74 @@
+/*article*/
+.articles{
+	text-align: center;
+	margin-top: 150px;
+}
+.articles-line{
+	display: flex;
+	justify-content: space-between;
+	margin-top: 100px;
+	gap: 40px;
+}
+/* Анимация отображения большего кол-во СТАТЕЙ при нажатие на кнопку show more и их скрытие */
+.articles__line-hidden{
+	height: 0;
+	margin: 0;
+	opacity: 0;
+	overflow: hidden;
+	transition: opacity 1s ease, height 0.5s ease;
+}
+.articles__line-active{
+	height: 320px;
+	opacity: 1;
+	overflow: visible;
+	transition: opacity 1s ease, height 0.5s ease;
+}
+/**Анимация отображения большего кол-во СТАТЕЙ при нажатие на кнопку show more и их скрытие**/
+.article{
+	max-width: 580px;
+}
+.article-inner{
+	margin-top: 30px;
+	display: flex;
+	justify-content: space-between;
+}
+.article__btn{
+	color: #ffff;
+	background-color: #0066FF;
+	padding: 4px 20.5px;
+	cursor: pointer;
+}
+.articles__btn-show{
+	margin-top: 70px;
+}
+/**article**/
+@media screen and (max-width: 1250px) {
+	.articles-line{
+		flex-direction: column;
+		align-items: center;
+	}
+	.articles__line-active{
+		height: 660px;
+	}
+	.article,
+	.aritcle__img{
+		max-width: 100%;
+	}
+}
+@media screen and (max-width: 650px){
+
+}
+@media screen and (max-width: 430px){
+	.articles__line-active{
+		height: 550px;
+	}
+	.article-inner{
+		flex-direction: column;
+		justify-content: space-between;
+		align-items: center;
+		gap: 20px;
+	}
+	.article__btn{
+		width: 90%;
+	}
+}

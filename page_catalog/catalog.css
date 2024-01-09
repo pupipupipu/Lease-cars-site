@@ -1,0 +1,120 @@
+/*header*/
+.header{
+	background-color: #151515;
+}
+/**header**/
+/*choose*/
+.choose{
+	text-align: center;
+	padding-top: 240px;
+	position: relative;
+}
+.choose__title{
+	margin-bottom: 50px;
+}
+.choose__btns{
+	margin: 0 auto;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	max-width: 800px;
+}
+.choose__btn,
+.choose__btn:not(:hover){
+	font-size: 1.5em;
+	font-weight: 700;
+	margin-bottom: 100px;
+	transition: color 0.15s ease-in-out;
+}
+.choose__btn-active,
+.choose__btn:hover{
+	color: #0066FF;
+	transition: color 0.15s ease-in-out;
+}
+.choose__items{
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+}
+.choose__item{
+	margin: 100px 10px;
+}
+.choose__item-inner{
+	margin-top: -5px;
+	display: flex;
+	flex-direction: column;
+	border: 1px solid #0066FF;
+	border-top: none;
+}
+.choose__item-title{
+	margin-top: 20px;
+}
+.choose__item-title,
+.choose__item-text,
+.choose__item-price{
+	margin-bottom: 20px;
+}
+.choose__item-button {
+	margin-top: auto;
+	border-top: 1px solid #0066FF;
+	padding: 4px 20.5px;
+}
+/*Видимость нужных карточек товара*/
+.choose__items-hidden{
+	position: absolute;
+	height: 0;
+	opacity: 0;
+	overflow: hidden;
+	transition: opacity 1s ease;
+}
+.choose__items-active{
+	height: 100%;
+	opacity: 1;
+	overflow: visible;
+	transition: opacity 1s ease;
+}
+.choose__item-hidden{
+	margin: 0;
+	height: 0;
+	width: 290px;
+	opacity: 0;
+	overflow: hidden;
+	transition: opacity 1s ease, height 0.4s ease;
+}
+.choose__item-active{
+	opacity: 1;
+	height: 364px;
+	overflow: visible;
+	transition: opacity 1s ease, height 0.4s ease;
+}
+/**Видимость нужного кол-во карточек**/
+/**choose**/
+@media screen and (max-width: 1200px) {
+	.choose__btn{
+		width: 35%;
+	}
+	.choose__items{
+		justify-content: space-around;
+	}
+}
+@media screen and (max-width: 800px) {
+	.choose__item{
+		margin-top: 0;
+	}
+	.choose__item-img{
+		width: 350px;
+	}
+	.choose__btns{
+		flex-direction: column;
+		align-items: center;
+	}
+	.choose__btn{
+		width: 100%;
+	}
+}
+@media screen and (max-width: 500px) {
+	.choose__item-img{
+		max-width: 100%;
+	}
+}
+

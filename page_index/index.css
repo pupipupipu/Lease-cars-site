@@ -1,0 +1,252 @@
+/*slider*/
+.slider{
+	height: 100vh;
+	background-image: url("images/slider1.jpg");
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: bottom center;
+	text-align: center;
+	transition: background-image 0.5s ease-in-out;
+}
+.slider__items-inner{
+	display: flex;
+	justify-content: space-between;
+	flex-direction: column;
+	height: 100vh;
+	align-items: center;
+}
+.slider__title{
+	color: #ffff;
+	padding-top: 170px;
+	font-size: 6em;
+	line-height: 0.93;
+}
+.slider__btn{
+	margin-top: 30px;
+	display: inline-block;
+	padding: 23px 112.5px;
+	font-size: 2.25em;
+}
+.slider__numbers{
+	padding-bottom: 30px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 570px;
+}
+.slider__number{
+	background-color: #000000;
+	height: 3px;
+	width: 120px;
+	transition: 0.5s ease-in-out;
+}
+.slider__number-active{
+	height: 6px;
+	background-color: #fff;
+	transition: 0.5s ease-in-out;
+}
+/**slider**/
+/*why lease*/
+.why-lease,
+.how-work,
+.important,
+.welcome{
+	margin-top: 150px;
+	text-align: center;
+}
+.why-lease__items {
+	display: flex;
+	justify-content: space-between;
+	flex-wrap: wrap;
+	align-items: center;
+}
+.why-lease__item {
+	align-items: center;
+	margin-top: 50px;
+	width: 25%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.why-lease__item-img {
+	margin: 0 60px 30px 60px;
+	width: 150px;
+}
+.why-lease__item-title {
+	margin-bottom: 30px;
+}
+.why-lease__item-text {
+	padding: 20px;
+	text-align: left;
+}
+/**why lease**/
+/*how work*/
+.how-work__text-inner{
+	max-width: 580px;
+	margin: 0 auto;
+}
+.how-work__text {
+	margin-top: 50px;
+	text-align: left;
+}
+.how-work__rules-title {
+	margin-top: 50px;
+	text-align: left;
+}
+.how-work__items{
+	margin-top: 50px;
+	max-width: 510px;
+	margin: 0 auto;
+}
+.how-work__rules-item {
+	margin-top: 40px;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+.how-work__item-number {
+	border-radius: 50%;
+	padding: 21px 38px;
+	background-color: #0066FF;
+	color: #fff;
+	font-weight: 700;
+	font-size: 3em;
+	width: 100px;
+	height: 100px;
+}
+.how-work__item-text {
+	max-width: 270px;
+	text-align: left;
+}
+.how-work__contract-text {
+	margin-top: 80px;
+	text-align: left;
+}
+/**how work**/
+/*welcome*/
+.welcome__second-title{
+	margin-top: 20px;
+}
+.welcome__video{
+	margin-top: 50px;
+	width: 900px;
+	height: 450px;
+	border: none;
+	border-radius: 5px;
+}
+/**welcome**/
+/*important*/
+.important__text-inner{
+	max-width: 580px;
+	margin: 0 auto;
+}
+.important__text{
+	margin-top: 20px;
+	text-align: left;
+}
+.important__items{
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-top: 50px;
+	flex-wrap: wrap;
+}
+.important__item{
+	display: flex;
+	flex-direction: column;
+	text-align: left;
+	max-width: 270px;
+	height: 100%;
+}
+.important__item-text{
+	margin-top: 20px;
+	padding-right: 20px;
+}
+/**important**/
+@media screen and (max-width: 1200px){
+	.slider__title{
+		font-size: 4em;
+	}
+	.slider__btn{
+		font-size: 1.75em;
+		padding: 15px 70px;
+	}
+	.slider__numbers{
+		width: 300px;
+	}
+	.slider__number{
+		width: 60px;
+	}
+	.why-lease,
+	.important,
+	.how-work,
+	.welcome{
+		margin-top: 100px;
+	}
+	.why-lease__items{
+		align-items: flex-start;
+	}
+	.why-lease__item{
+		width: 50%;
+	}
+	.why-lease__item-img{
+		width: 50%;
+	}
+	.important__item-img{
+		width: 450px;
+	}
+	.important__item{
+		margin: 80px 20px 0 0 ;
+		max-width: 450px;
+	}
+}
+@media screen and (max-width: 1000px) {
+	.welcome__video{
+		width: 100%;
+	}
+	.important__items{
+		flex-direction: column;
+		align-items: center;
+	}
+	.important__item{
+		max-width: 100%;
+		align-items: center;
+	}
+	.important__item-img{
+		width: 600px;
+	}
+}
+@media screen and (max-width: 650px) {
+	.slider__numbers{
+		width: 280px;
+	}
+	.slider__number{
+		width: 50px;
+	}
+	.why-lease__item{
+		width: 100%;
+	}
+	.why-lease__item-img{
+		width: 50%;
+	}
+	.welcome__video{
+		height: 300px;
+	}
+	.important__item-img{
+		max-width: 100%;
+	}
+}
+@media screen and (max-width: 500px) {
+	.slider__title{
+		font-size: 2.3em;
+	}
+	.slider__btn{
+		padding: 15px 48px;
+	}
+	.how-work__item-text{
+		padding-left: 30px;
+	}
+	.welcome__video{
+		height: 200px;
+	}
+}
